@@ -1,0 +1,663 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-tactical hover:bg-tactical-yellow-dark text-jet-black font-space-grotesk font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-tactical-yellow/25;
+  }
+  
+  .btn-primary-outline {
+    @apply border-2 border-tactical-yellow text-tactical-yellow hover:bg-tactical-yellow hover:text-jet-black font-space-grotesk font-semibold px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .btn-primary-large {
+    @apply bg-gradient-tactical hover:bg-tactical-yellow-dark text-jet-black font-space-grotesk font-bold px-12 py-6 rounded-xl text-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-tactical-yellow/30 flex items-center;
+  }
+  
+  .btn-secondary {
+    @apply bg-gradient-military hover:bg-military-green-dark text-soft-white font-space-grotesk font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
+  }
+  
+  .btn-secondary-large {
+    @apply border-2 border-soft-white/30 hover:border-tactical-yellow text-soft-white hover:text-tactical-yellow font-space-grotesk font-bold px-12 py-6 rounded-xl text-xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm flex items-center;
+  }
+  
+  .card {
+    @apply bg-jet-black-light border border-military-green/20 rounded-xl p-6 backdrop-blur-sm transition-all duration-300 hover:border-tactical-yellow/30 hover:shadow-xl;
+  }
+  
+  .service-card {
+    @apply bg-gradient-to-b from-jet-black-light/80 to-jet-black-light/40 border border-tactical-yellow/10 rounded-3xl p-8 backdrop-blur-sm transition-all duration-500 hover:border-tactical-yellow/30 hover:shadow-2xl hover:shadow-tactical-yellow/10 hover:transform hover:scale-[1.02] relative overflow-hidden;
+  }
+  
+  .service-card::before {
+    @apply absolute inset-0 bg-gradient-to-br from-tactical-yellow/5 to-military-green/5 opacity-0 transition-opacity duration-500;
+    content: '';
+  }
+  
+  .service-card:hover::before {
+    @apply opacity-100;
+  }
+  
+  .service-icon-container {
+    @apply relative w-20 h-20 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300;
+  }
+  
+  .service-content {
+    @apply relative z-10;
+  }
+  
+  .service-cta {
+    @apply inline-flex items-center text-tactical-yellow hover:text-tactical-yellow-light font-space-grotesk font-semibold transition-colors duration-300 border-b border-tactical-yellow/30 hover:border-tactical-yellow pb-1;
+  }
+  
+  /* Solutions Page Specific Styles */
+  .solution-preview-card {
+    @apply bg-gradient-to-b from-jet-black-light/60 to-jet-black-light/20 border border-military-green/10 rounded-2xl p-6 backdrop-blur-sm transition-all duration-500 hover:border-tactical-yellow/30 hover:shadow-xl hover:shadow-tactical-yellow/5 hover:transform hover:scale-[1.05] relative overflow-hidden;
+  }
+  
+  .solution-preview-card::before {
+    @apply absolute inset-0 bg-gradient-to-br from-tactical-yellow/5 to-military-green/5 opacity-0 transition-opacity duration-500;
+    content: '';
+  }
+  
+  .solution-preview-card:hover::before {
+    @apply opacity-100;
+  }
+  
+  .solution-preview-icon {
+    @apply w-16 h-16 bg-gradient-to-br from-tactical-yellow/20 to-military-green/20 rounded-2xl flex items-center justify-center mb-4 mx-auto transition-all duration-300;
+  }
+  
+  .solution-card {
+    @apply bg-gradient-to-b from-jet-black-light/80 to-jet-black-light/40 border border-tactical-yellow/10 rounded-3xl overflow-hidden backdrop-blur-sm transition-all duration-500 hover:border-tactical-yellow/30 hover:shadow-2xl hover:shadow-tactical-yellow/10 hover:transform hover:scale-[1.02] relative;
+  }
+  
+  .solution-card::before {
+    @apply absolute inset-0 bg-gradient-to-br from-tactical-yellow/5 to-military-green/5 opacity-0 transition-opacity duration-500;
+    content: '';
+  }
+  
+  .solution-card:hover::before {
+    @apply opacity-100;
+  }
+  
+  .solution-header {
+    @apply relative z-10 p-8 pb-6;
+  }
+  
+  .solution-services {
+    @apply relative z-10 px-8 pb-6;
+  }
+  
+  .solution-footer {
+    @apply relative z-10 p-8 pt-6 border-t border-tactical-yellow/10;
+  }
+  
+  .solution-icon-container {
+    @apply relative w-24 h-24 rounded-3xl flex items-center justify-center mb-6 transition-all duration-300;
+  }
+  
+  .solution-tech-badge {
+    @apply bg-military-green/20 text-military-green text-xs font-medium px-3 py-1 rounded-full border border-military-green/30;
+  }
+  
+  .solution-cta {
+    @apply inline-flex items-center text-tactical-yellow hover:text-tactical-yellow-light font-space-grotesk font-semibold transition-colors duration-300 border-b border-tactical-yellow/30 hover:border-tactical-yellow pb-1;
+  }
+  
+  .industry-card {
+    @apply bg-gradient-to-b from-jet-black-light/60 to-jet-black-light/20 border border-military-green/10 rounded-3xl p-8 backdrop-blur-sm transition-all duration-500 hover:border-tactical-yellow/30 hover:shadow-2xl hover:shadow-tactical-yellow/5 hover:transform hover:scale-[1.05] relative overflow-hidden cursor-pointer;
+  }
+  
+  .industry-card::before {
+    @apply absolute inset-0 bg-gradient-to-br from-tactical-yellow/5 to-military-green/5 opacity-0 transition-opacity duration-500;
+    content: '';
+  }
+  
+  .industry-card:hover::before {
+    @apply opacity-100;
+  }
+  
+  .industry-icon-container {
+    @apply relative w-24 h-24 rounded-3xl flex items-center justify-center mb-6 mx-auto transition-all duration-300;
+  }
+  
+  .industry-content {
+    @apply relative z-10 text-center;
+  }
+  
+  .industry-overlay {
+    @apply absolute bottom-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300;
+  }
+  
+  .trust-card {
+    @apply bg-gradient-to-b from-jet-black-light/80 to-jet-black-light/40 border border-tactical-yellow/10 rounded-3xl p-8 backdrop-blur-sm transition-all duration-500 hover:border-tactical-yellow/30 hover:shadow-2xl hover:shadow-tactical-yellow/10 hover:transform hover:scale-[1.02] relative overflow-hidden;
+  }
+  
+  .trust-card::before {
+    @apply absolute inset-0 bg-gradient-to-br from-tactical-yellow/5 to-military-green/5 opacity-0 transition-opacity duration-500;
+    content: '';
+  }
+  
+  .trust-card:hover::before {
+    @apply opacity-100;
+  }
+  
+  .trust-icon-container {
+    @apply relative w-20 h-20 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300;
+  }
+  
+  .trust-content {
+    @apply relative z-10;
+  }
+  
+  .trust-stat {
+    @apply transition-all duration-300 hover:transform hover:scale-105;
+  }
+  
+  .blog-card {
+    @apply bg-gradient-to-b from-jet-black-light/80 to-jet-black-light/40 border border-military-green/10 rounded-3xl overflow-hidden backdrop-blur-sm transition-all duration-500 hover:border-tactical-yellow/30 hover:shadow-2xl hover:shadow-tactical-yellow/10 hover:transform hover:scale-[1.02] relative;
+  }
+  
+  .blog-card::before {
+    @apply absolute inset-0 bg-gradient-to-br from-tactical-yellow/5 to-military-green/5 opacity-0 transition-opacity duration-500;
+    content: '';
+  }
+  
+  .blog-card:hover::before {
+    @apply opacity-100;
+  }
+  
+  .blog-image-container {
+    @apply relative overflow-hidden;
+  }
+  
+  .blog-content {
+    @apply relative z-10 p-6;
+  }
+  
+  .blog-category-badge {
+    @apply bg-tactical-yellow/20 backdrop-blur-sm text-tactical-yellow text-xs font-semibold px-3 py-1 rounded-full border border-tactical-yellow/30;
+  }
+  
+  .blog-tag {
+    @apply bg-military-green/20 text-military-green text-xs font-medium px-2 py-1 rounded-md border border-military-green/30;
+  }
+  
+  .blog-overlay {
+    @apply absolute bottom-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300;
+  }
+  
+  .blog-nav-btn {
+    @apply w-12 h-12 bg-jet-black-light/80 border border-tactical-yellow/20 rounded-full flex items-center justify-center backdrop-blur-sm transition-all duration-300 hover:border-tactical-yellow/50 hover:bg-tactical-yellow/10 hover:scale-110;
+  }
+  
+  /* About Page Specific Styles */
+  .mission-card {
+    @apply bg-gradient-to-b from-jet-black-light/80 to-jet-black-light/40 border border-tactical-yellow/10 rounded-3xl p-10 backdrop-blur-sm transition-all duration-500 hover:border-tactical-yellow/30 hover:shadow-2xl hover:shadow-tactical-yellow/10 hover:transform hover:scale-[1.02] relative overflow-hidden;
+  }
+  
+  .mission-card::before {
+    @apply absolute inset-0 bg-gradient-to-br from-tactical-yellow/5 to-military-green/5 opacity-0 transition-opacity duration-500;
+    content: '';
+  }
+  
+  .mission-card:hover::before {
+    @apply opacity-100;
+  }
+  
+  .mission-icon-container {
+    @apply relative w-24 h-24 rounded-3xl flex items-center justify-center mb-8 transition-all duration-300;
+  }
+  
+  .mission-content {
+    @apply relative z-10;
+  }
+  
+  .value-card {
+    @apply bg-gradient-to-b from-jet-black-light/60 to-jet-black-light/20 border border-military-green/10 rounded-2xl p-6 backdrop-blur-sm transition-all duration-500 hover:border-tactical-yellow/30 hover:shadow-xl hover:shadow-tactical-yellow/5 hover:transform hover:scale-[1.05] relative overflow-hidden;
+  }
+  
+  .value-card::before {
+    @apply absolute inset-0 bg-gradient-to-br from-tactical-yellow/5 to-military-green/5 opacity-0 transition-opacity duration-500;
+    content: '';
+  }
+  
+  .value-card:hover::before {
+    @apply opacity-100;
+  }
+  
+  .value-icon-container {
+    @apply relative w-16 h-16 rounded-2xl flex items-center justify-center mb-4 transition-all duration-300;
+  }
+  
+  .value-content {
+    @apply relative z-10;
+  }
+  
+  .leader-card {
+    @apply bg-gradient-to-b from-jet-black-light/80 to-jet-black-light/40 border border-tactical-yellow/10 rounded-3xl p-6 backdrop-blur-sm transition-all duration-500 hover:border-tactical-yellow/30 hover:shadow-2xl hover:shadow-tactical-yellow/10 hover:transform hover:scale-[1.02] relative overflow-hidden;
+  }
+  
+  .leader-card::before {
+    @apply absolute inset-0 bg-gradient-to-br from-tactical-yellow/5 to-military-green/5 opacity-0 transition-opacity duration-500;
+    content: '';
+  }
+  
+  .leader-card:hover::before {
+    @apply opacity-100;
+  }
+  
+  .leader-image-container {
+    @apply relative overflow-hidden mb-6;
+  }
+  
+  .leader-content {
+    @apply relative z-10;
+  }
+  
+  .leader-social-btn {
+    @apply w-8 h-8 bg-tactical-yellow/10 border border-tactical-yellow/20 rounded-full flex items-center justify-center text-tactical-yellow hover:bg-tactical-yellow/20 hover:border-tactical-yellow/40 transition-all duration-300;
+  }
+  
+  .office-card {
+    @apply bg-gradient-to-b from-jet-black-light/60 to-jet-black-light/20 border border-military-green/10 rounded-2xl p-6 backdrop-blur-sm transition-all duration-500 hover:border-tactical-yellow/30 hover:shadow-xl hover:shadow-tactical-yellow/5 hover:transform hover:scale-[1.05] relative overflow-hidden;
+  }
+  
+  .office-card::before {
+    @apply absolute inset-0 bg-gradient-to-br from-tactical-yellow/5 to-military-green/5 opacity-0 transition-opacity duration-500;
+    content: '';
+  }
+  
+  .office-card:hover::before {
+    @apply opacity-100;
+  }
+  
+  .office-content {
+    @apply relative z-10;
+  }
+  
+  /* Partner Cards */
+  .partner-card {
+    @apply bg-gradient-to-b from-jet-black-light/80 to-jet-black-light/40 border border-military-green/10 rounded-3xl overflow-hidden backdrop-blur-sm transition-all duration-500 hover:border-tactical-yellow/30 hover:shadow-2xl hover:shadow-tactical-yellow/10 hover:transform hover:scale-[1.02] relative;
+  }
+  
+  .partner-card::before {
+    @apply absolute inset-0 bg-gradient-to-br from-tactical-yellow/5 to-military-green/5 opacity-0 transition-opacity duration-500;
+    content: '';
+  }
+  
+  .partner-card:hover::before {
+    @apply opacity-100;
+  }
+  
+  .partner-image-container {
+    @apply relative overflow-hidden;
+  }
+  
+  .partner-content {
+    @apply relative z-10 p-6;
+  }
+  
+  .partner-overlay {
+    @apply absolute bottom-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300;
+  }
+  
+  /* Industries Page Specific Styles */
+  .industry-sector-card {
+    @apply bg-gradient-to-b from-jet-black-light/80 to-jet-black-light/40 border border-military-green/10 rounded-3xl overflow-hidden backdrop-blur-sm transition-all duration-500 hover:border-tactical-yellow/30 hover:shadow-2xl hover:shadow-tactical-yellow/10 hover:transform hover:scale-[1.02] relative;
+  }
+  
+  .industry-sector-card::before {
+    @apply absolute inset-0 bg-gradient-to-br from-tactical-yellow/5 to-military-green/5 opacity-0 transition-opacity duration-500;
+    content: '';
+  }
+  
+  .industry-sector-card:hover::before {
+    @apply opacity-100;
+  }
+  
+  .industry-image-container {
+    @apply relative overflow-hidden;
+  }
+  
+  .industry-sector-content {
+    @apply relative z-10 p-6;
+  }
+  
+  .industry-icon-badge {
+    @apply w-12 h-12 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-tactical-yellow/20 transition-all duration-300;
+  }
+  
+  .industry-sector-overlay {
+    @apply absolute bottom-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300;
+  }
+  
+  .capability-card {
+    @apply bg-gradient-to-b from-jet-black-light/60 to-jet-black-light/20 border border-military-green/10 rounded-2xl p-6 backdrop-blur-sm transition-all duration-500 hover:border-tactical-yellow/30 hover:shadow-xl hover:shadow-tactical-yellow/5 hover:transform hover:scale-[1.05] relative overflow-hidden;
+  }
+  
+  .capability-card::before {
+    @apply absolute inset-0 bg-gradient-to-br from-tactical-yellow/5 to-military-green/5 opacity-0 transition-opacity duration-500;
+    content: '';
+  }
+  
+  .capability-card:hover::before {
+    @apply opacity-100;
+  }
+  
+  .capability-icon-container {
+    @apply relative w-16 h-16 rounded-2xl flex items-center justify-center mb-4 transition-all duration-300;
+  }
+  
+  .capability-content {
+    @apply relative z-10;
+  }
+  
+  /* Global Timeline Specific Styles */
+  .stat-container {
+    @apply transition-all duration-300 hover:transform hover:scale-105;
+  }
+  
+  .stat-icon-container {
+    @apply relative w-20 h-20 rounded-2xl flex items-center justify-center mb-6 mx-auto transition-all duration-300;
+  }
+  
+  .stat-content {
+    @apply text-center;
+  }
+  
+  .timeline-nav-btn {
+    @apply px-6 py-3 rounded-xl font-space-grotesk font-semibold transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .timeline-item {
+    @apply relative transition-all duration-500;
+  }
+  
+  .timeline-item.active {
+    @apply transform scale-105;
+  }
+  
+  .timeline-node {
+    @apply relative w-16 h-16 rounded-full border-2 flex items-center justify-center mx-auto mb-6 transition-all duration-500 z-10;
+  }
+  
+  .timeline-content {
+    @apply text-center transition-all duration-500;
+  }
+  
+  .timeline-content.active {
+    @apply transform scale-105;
+  }
+  
+  .timeline-year {
+    @apply text-2xl font-space-grotesk font-bold mb-2 transition-colors duration-300;
+  }
+  
+  .timeline-title {
+    @apply text-lg font-space-grotesk font-semibold mb-3 transition-colors duration-300;
+  }
+  
+  .timeline-description {
+    @apply text-sm leading-relaxed mb-4 transition-colors duration-300;
+  }
+  
+  .timeline-stats {
+    @apply bg-jet-black-light/50 border border-tactical-yellow/20 rounded-xl p-4 backdrop-blur-sm mt-4 opacity-0 animate-fade-in;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-tactical-yellow via-tactical-yellow-light to-tactical-yellow bg-clip-text text-transparent;
+  }
+  
+  .glow-effect {
+    @apply drop-shadow-[0_0_30px_rgba(255,215,0,0.4)];
+  }
+  
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes float-delayed {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Digital Fortress Animations */
+@keyframes hexGridPulse {
+  0%, 100% { 
+    opacity: 0.1; 
+    transform: scale(1); 
+  }
+  50% { 
+    opacity: 0.3; 
+    transform: scale(1.05); 
+  }
+}
+
+@keyframes shieldFloat {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg); 
+    opacity: 0.6;
+  }
+  33% { 
+    transform: translateY(-15px) rotate(2deg); 
+    opacity: 0.8;
+  }
+  66% { 
+    transform: translateY(-5px) rotate(-1deg); 
+    opacity: 0.7;
+  }
+}
+
+@keyframes nodeBlink {
+  0%, 80%, 100% { 
+    opacity: 0.3; 
+    transform: scale(1);
+  }
+  40% { 
+    opacity: 1; 
+    transform: scale(1.2);
+  }
+}
+
+@keyframes dataFlow {
+  0% { 
+    stroke-dashoffset: 100; 
+    opacity: 0;
+  }
+  10% { 
+    opacity: 1;
+  }
+  90% { 
+    opacity: 1;
+  }
+  100% { 
+    stroke-dashoffset: 0; 
+    opacity: 0;
+  }
+}
+
+@keyframes circuitPulse {
+  0%, 100% { 
+    opacity: 0.05; 
+  }
+  50% { 
+    opacity: 0.15; 
+  }
+}
+
+@keyframes parallaxMove {
+  0% { 
+    transform: translateX(0) translateY(0); 
+  }
+  100% { 
+    transform: translateX(-50px) translateY(-30px); 
+  }
+}
+
+/* Digital Fortress Component Classes */
+.digital-fortress-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hex-grid {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(255, 215, 0, 0.1) 2px, transparent 2px),
+    radial-gradient(circle at 75% 75%, rgba(255, 215, 0, 0.1) 2px, transparent 2px);
+  background-size: 60px 60px;
+  animation: hexGridPulse 8s ease-in-out infinite, parallaxMove 20s linear infinite;
+}
+
+.floating-shield {
+  position: absolute;
+  top: 20%;
+  right: 15%;
+  width: 120px;
+  height: 120px;
+  color: #FFD700;
+  animation: shieldFloat 12s ease-in-out infinite;
+  filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.3));
+}
+
+.data-nodes {
+  position: absolute;
+  inset: 0;
+}
+
+.data-node {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(circle, #FFD700 0%, rgba(255, 215, 0, 0.3) 70%, transparent 100%);
+  border-radius: 50%;
+  animation: nodeBlink 4s ease-in-out infinite;
+}
+
+.data-node:nth-child(1) { top: 15%; left: 20%; animation-delay: 0s; }
+.data-node:nth-child(2) { top: 35%; left: 80%; animation-delay: 1s; }
+.data-node:nth-child(3) { top: 60%; left: 15%; animation-delay: 2s; }
+.data-node:nth-child(4) { top: 80%; left: 70%; animation-delay: 3s; }
+.data-node:nth-child(5) { top: 25%; left: 60%; animation-delay: 1.5s; }
+.data-node:nth-child(6) { top: 70%; left: 40%; animation-delay: 2.5s; }
+
+.data-transfer-lines {
+  position: absolute;
+  inset: 0;
+}
+
+.transfer-line {
+  stroke: #FFD700;
+  stroke-width: 1;
+  fill: none;
+  opacity: 0.4;
+  stroke-dasharray: 5, 5;
+  animation: dataFlow 6s ease-in-out infinite;
+}
+
+.transfer-line:nth-child(1) { animation-delay: 0s; }
+.transfer-line:nth-child(2) { animation-delay: 2s; }
+.transfer-line:nth-child(3) { animation-delay: 4s; }
+
+.circuit-lines {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(90deg, rgba(255, 215, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(rgba(255, 215, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(45deg, rgba(58, 95, 58, 0.05) 1px, transparent 1px),
+    linear-gradient(-45deg, rgba(58, 95, 58, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px, 40px 40px, 80px 80px, 80px 80px;
+  animation: circuitPulse 10s ease-in-out infinite, parallaxMove 25s linear infinite reverse;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .floating-shield {
+    width: 80px;
+    height: 80px;
+    top: 10%;
+    right: 10%;
+  }
+  
+  .hex-grid {
+    background-size: 40px 40px;
+  }
+  
+  .circuit-lines {
+    background-size: 30px 30px, 30px 30px, 60px 60px, 60px 60px;
+  }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 8s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 10s ease-in-out infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0C0C0C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3A5F3A;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFD700;
+}
