@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-medium text-gray-900">Email</p>
-                      <p className="text-gray-600">contact@company.com</p>
+                      <p className="text-gray-600">info@cyrocglobal.com</p>
                     </div>
                   </div>
                   
@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-medium text-gray-900">Phone</p>
-                      <p className="text-gray-600">+1 (555) 123-4567</p>
+                      <p className="text-gray-600">+16784266901</p>
                     </div>
                   </div>
                   
@@ -50,7 +50,7 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-medium text-gray-900">Address</p>
-                      <p className="text-gray-600">123 Business Ave<br />Suite 100<br />City, State 12345</p>
+                      <p className="text-gray-600">Cyroc 8735 DUNWOODY PLACE #5124<br />ATLANTA, GA,30350 USA</p>
                     </div>
                   </div>
                 </div>
