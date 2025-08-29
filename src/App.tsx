@@ -537,17 +537,17 @@ function App() {
               <div className="text-center">
                 <Mail className="h-8 w-8 text-tactical-yellow mx-auto mb-3" />
                 <div className="text-sm font-medium text-soft-white mb-1">Email</div>
-                <div className="text-sm text-soft-white-dim">contact@cyroc.com</div>
+                <div className="text-sm text-soft-white-dim">info@cyrocglobal.com</div>
               </div>
               <div className="text-center">
                 <Phone className="h-8 w-8 text-military-green mx-auto mb-3" />
                 <div className="text-sm font-medium text-soft-white mb-1">Phone</div>
-                <div className="text-sm text-soft-white-dim">+1 (555) 123-4567</div>
+                <div className="text-sm text-soft-white-dim">+16784266901</div>
               </div>
               <div className="text-center">
                 <MapPin className="h-8 w-8 text-tactical-yellow mx-auto mb-3" />
                 <div className="text-sm font-medium text-soft-white mb-1">Headquarters</div>
-                <div className="text-sm text-soft-white-dim">New York, NY</div>
+                <div className="text-sm text-soft-white-dim">Cyroc 8735 DUNWOODY PLACE #5124, Atlanta, GA 30350 USA</div>
               </div>
             </div>
           </div>
