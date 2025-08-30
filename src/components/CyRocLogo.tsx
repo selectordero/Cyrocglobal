@@ -14,7 +14,7 @@ const CyRocLogo: React.FC<CyRocLogoProps> = ({ className = "" }) => {
       {/* Custom PNG Logo */}
       <div className="relative flex items-center">
         <img 
-          src="/LOGO A.png" 
+          src="/Cyrocglobal/LOGO A.png" 
           alt="CyRoc Logo"
           className="w-10 h-10 md:w-14 md:h-14 max-w-full h-auto object-contain group-hover:drop-shadow-[0_0_16px_rgba(255,215,0,0.6)] transition-all duration-300"
         />
