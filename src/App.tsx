@@ -70,7 +70,7 @@ function App() {
   return (
     <div className="min-h-screen bg-jet-black text-soft-white">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-jet-black/90 backdrop-blur-md border-b border-tactical-yellow/10">
+      <nav className="fixed top-0 w-full z-50 bg-jet-black/90 backdrop-blur-md border-b border-tactical-yellow/10 rounded-xl md:rounded-2xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <CyRocLogo />
