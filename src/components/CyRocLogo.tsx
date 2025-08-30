@@ -12,16 +12,15 @@ const CyRocLogo: React.FC<CyRocLogoProps> = ({ className = "" }) => {
       aria-label="CyRoc Cybersecurity - Home"
     >
       {/* Custom PNG Logo */}
-      <div className="relative">
+      <div className="relative flex items-center">
         <img 
           src="/LOGO A.png" 
           alt="CyRoc Logo"
-          className="h-14 w-14 object-contain group-hover:drop-shadow-[0_0_16px_rgba(255,215,0,0.6)] transition-all duration-300"
+          className="w-10 h-10 md:w-14 md:h-14 max-w-full h-auto object-contain group-hover:drop-shadow-[0_0_16px_rgba(255,215,0,0.6)] transition-all duration-300"
         />
-        
         {/* Animated Pulse Effect */}
-        <div className="absolute inset-0 animate-pulse opacity-20 group-hover:opacity-40 transition-opacity duration-300">
-          <div className="h-14 w-14 border border-tactical-yellow/30 rounded-sm"></div>
+        <div className="absolute inset-0 animate-pulse opacity-20 group-hover:opacity-40 transition-opacity duration-300 pointer-events-none">
+          <div className="w-10 h-10 md:w-14 md:h-14 border border-tactical-yellow/30 rounded-sm"></div>
         </div>
       </div>
       
