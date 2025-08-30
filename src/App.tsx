@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Building2, Heart, Zap, Users, Award, Globe, Target, Lock, Eye, Brain, ArrowRight, CheckCircle, DollarSign, TrendingUp, Activity, Clock, MapPin, Star, ChevronLeft, ChevronRight, Play, ExternalLink, FileText, Mail, Phone, Calendar, Briefcase, Handshake, Network } from 'lucide-react';
+import { Shield, Building2, Heart, Zap, Users, Award, Globe, Target, Lock, Brain, ArrowRight, CheckCircle, DollarSign, MapPin, Mail, Phone, Calendar } from 'lucide-react';
 import CyRocLogo from './components/CyRocLogo';
 import About from './About';
 import Solutions from './Solutions';
@@ -73,16 +73,7 @@ function App() {
       <nav className="fixed top-0 w-full z-50 bg-jet-black/90 backdrop-blur-md border-b border-tactical-yellow/10 rounded-xl md:rounded-2xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            <a href="/" className="flex items-center space-x-3 group transition-all duration-300 hover:scale-105">
-              <img 
-                src="/Cyrocglobal/LOGO A.png" 
-                alt="CyRoc Logo"
-                className="w-10 h-10 md:w-14 md:h-14 max-w-full h-auto object-contain group-hover:drop-shadow-[0_0_16px_rgba(255,215,0,0.6)] transition-all duration-300"
-              />
-              <span className="font-space-grotesk font-bold text-2xl md:text-3xl leading-none text-soft-white group-hover:text-tactical-yellow transition-colors duration-300" style={{ letterSpacing: '-0.5px' }}>
-                CyRoc
-              </span>
-            </a>
+            <CyRocLogo />
             
             <div className="hidden lg:flex items-center space-x-8">
               <button onClick={() => setCurrentPage('home')} className="text-tactical-yellow font-medium">Home</button>
