@@ -73,7 +73,12 @@ function App() {
       <nav className="fixed top-0 w-full z-50 bg-jet-black/90 backdrop-blur-md border-b border-tactical-yellow/10 rounded-xl md:rounded-2xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            <CyRocLogo />
+            <a href="/" className="flex items-center space-x-3 group transition-all duration-300 hover:scale-105">
+              <Shield className="h-8 w-8 text-tactical-yellow group-hover:drop-shadow-[0_0_16px_rgba(255,215,0,0.6)] transition-all duration-300" />
+              <span className="font-space-grotesk font-bold text-2xl md:text-3xl leading-none text-soft-white group-hover:text-tactical-yellow transition-colors duration-300" style={{ letterSpacing: '-0.5px' }}>
+                CyRoc
+              </span>
+            </a>
             
             <div className="hidden lg:flex items-center space-x-8">
               <button onClick={() => setCurrentPage('home')} className="text-tactical-yellow font-medium">Home</button>
