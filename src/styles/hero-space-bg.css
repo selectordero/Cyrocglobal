@@ -1,0 +1,59 @@
+/* Static CSS for hero-space-bg */
+.hero-space-bg {
+  background: linear-gradient(to bottom, #0a0f1c, #1a1f2e);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-space-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255, 165, 0, 0.2) 1px, transparent 1px),
+              radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px, 100px 100px;
+  z-index: 1;
+}
+
+.hero-space-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(0, 0, 255, 0.1) 50%, transparent 100%);
+  z-index: 2;
+}
+
+/* Animated CSS for hero-space-bg */
+.hero-space-bg-animated {
+  background: linear-gradient(to bottom, #0a0f1c, #1a1f2e);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-space-bg-animated::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255, 165, 0, 0.2) 1px, transparent 1px),
+              radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px, 100px 100px;
+  animation: twinkle 5s infinite;
+  z-index: 1;
+}
+
+.hero-space-bg-animated::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(0, 0, 255, 0.1) 50%, transparent 100%);
+  z-index: 2;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
