@@ -879,6 +879,21 @@ function About() {
           </div>
         </div>
       </section>
+
+      {/* About Section - CyRoc Overview */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-jet-black to-jet-black-light">
+        <div className="max-w-7xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-20">
+            <h2 className="font-space-grotesk text-5xl md:text-6xl font-bold mb-6">
+              <span className="text-soft-white">Experts in Cybersecurity and Compliance Solutions</span>
+            </h2>
+            <p className="text-xl md:text-2xl text-soft-white-dim max-w-3xl mx-auto leading-relaxed">
+              Cyroc is a cybersecurity consultancy specializing in Cloud Security, GRC, and penetration testing. We are an AWS Select partner, Microsoft Cloud partner, and Red Hat partner with compliance programs underway for SOC 2, ISO 27001, PCI DSS, HIPAA, ISO 27701, ISO 9001, and NIST Cybersecurity Framework alignment.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
