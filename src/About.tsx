@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Shield, Target, Zap, Globe, Users, Award, ArrowRight, CheckCircle, Building2, Heart, Brain, Eye, Clock, MapPin, Linkedin, Twitter, Mail, TrendingUp, Activity, Zap as Lightning } from 'lucide-react';
+import { Shield, Target, Zap, Globe, Users, Award, ArrowRight, CheckCircle, Building2, Heart, Brain, Eye, Clock, MapPin, Linkedin, Twitter, Mail, Activity, Zap as Lightning } from 'lucide-react';
 import CyRocLogo from './components/CyRocLogo';
 
 /**
@@ -20,15 +20,22 @@ import CyRocLogo from './components/CyRocLogo';
  * Cross-references: All service pages support the company mission outlined here
  */
 // Animated Counter Component
-const AnimatedCounter = ({ end, duration = 2000, suffix = "", prefix = "" }) => {
+type AnimatedCounterProps = {
+  end: number;
+  duration?: number;
+  suffix?: string;
+  prefix?: string;
+};
+
+const AnimatedCounter: React.FC<AnimatedCounterProps> = ({ end, duration = 2000, suffix = "", prefix = "" }) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    let startTime;
-    let animationFrame;
+    let startTime: number | undefined = undefined;
+    let animationFrame: number;
 
-    const animate = (timestamp) => {
-      if (!startTime) startTime = timestamp;
+    const animate = (timestamp: number) => {
+      if (startTime === undefined) startTime = timestamp;
       const progress = Math.min((timestamp - startTime) / duration, 1);
       
       const easeOutQuart = 1 - Math.pow(1 - progress, 4);
