@@ -899,6 +899,57 @@ function About() {
               Cyroc is a cybersecurity consultancy specializing in Cloud Security, GRC, and penetration testing. We are an AWS Select partner, Microsoft Cloud partner, and Red Hat partner with compliance programs underway for SOC 2, ISO 27001, PCI DSS, HIPAA, ISO 27701, ISO 9001, and NIST Cybersecurity Framework alignment.
             </p>
           </div>
+
+          {/* Background Effects */}
+          <div className="bg-gradient-to-r from-jet-black-light/80 to-jet-black-light/40 border border-tactical-yellow/20 rounded-3xl p-8 mb-16 backdrop-blur-sm">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+              <div className="stat-container group">
+                <div className="stat-icon-container bg-gradient-to-br from-tactical-yellow/20 to-tactical-yellow/5 group-hover:from-tactical-yellow/30 group-hover:to-tactical-yellow/10">
+                  <Globe className="h-12 w-12 text-tactical-yellow group-hover:scale-110 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-tactical-yellow/10 rounded-2xl blur-xl group-hover:bg-tactical-yellow/20 transition-colors duration-300"></div>
+                </div>
+                <div className="stat-content">
+                  <div className="text-5xl md:text-6xl font-space-grotesk font-bold text-tactical-yellow mb-2">
+                    <AnimatedCounter end={4} duration={2500} />
+                  </div>
+                  <div className="text-soft-white font-semibold text-lg mb-1">Active Continents</div>
+                  <div className="text-soft-white-dim text-sm">Global Presence</div>
+                </div>
+              </div>
+
+              {/* SLA Uptime */}
+              <div className="stat-container group">
+                <div className="stat-icon-container bg-gradient-to-br from-military-green/20 to-military-green/5 group-hover:from-military-green/30 group-hover:to-military-green/10">
+                  <Activity className="h-12 w-12 text-military-green group-hover:scale-110 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-military-green/10 rounded-2xl blur-xl group-hover:bg-military-green/20 transition-colors duration-300"></div>
+                </div>
+                
+                <div className="stat-content">
+                  <div className="text-5xl md:text-6xl font-space-grotesk font-bold text-military-green mb-2">
+                    <AnimatedCounter end={99.9} duration={3000} suffix="%" />
+                  </div>
+                  <div className="text-soft-white font-semibold text-lg mb-1">SLA Uptime</div>
+                  <div className="text-soft-white-dim text-sm">Industry Leading</div>
+                </div>
+              </div>
+
+              {/* Forensic Audits */}
+              <div className="stat-container group">
+                <div className="stat-icon-container bg-gradient-to-br from-tactical-yellow/15 to-military-green/15 group-hover:from-tactical-yellow/25 group-hover:to-military-green/25">
+                  <Lightning className="h-12 w-12 text-tactical-yellow group-hover:scale-110 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-tactical-yellow/10 to-military-green/10 rounded-2xl blur-xl group-hover:from-tactical-yellow/20 group-hover:to-military-green/20 transition-colors duration-300"></div>
+                </div>
+                
+                <div className="stat-content">
+                  <div className="text-5xl md:text-6xl font-space-grotesk font-bold text-tactical-yellow mb-2">
+                    <AnimatedCounter end={40} duration={2000} suffix="+" />
+                  </div>
+                  <div className="text-soft-white font-semibold text-lg mb-1">Forensic Audits</div>
+                  <div className="text-soft-white-dim text-sm">Successfully Resolved</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
