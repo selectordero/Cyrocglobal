@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Shield, ShieldCheck, ArrowRight, CheckCircle, Users, Award, Globe, Target, Lock, Eye, Brain, AlertTriangle, FileText, TrendingUp, Activity, Clock, MapPin, Star, ChevronLeft, ChevronRight, Play, ExternalLink, Radar, Cpu, Network, Database } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { ShieldCheck, ArrowRight, CheckCircle, Users, Award, Globe, Target, Lock, Eye, Brain, AlertTriangle, FileText, TrendingUp, Activity, Clock, MapPin, Star, ChevronLeft, ChevronRight, Play, ExternalLink, Radar, Cpu, Network, Database } from 'lucide-react';
 
 /**
  * GOVERNMENT & DEFENSE PAGE - SERVICE MAPPING ANNOTATIONS
