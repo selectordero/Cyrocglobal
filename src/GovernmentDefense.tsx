@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { ShieldCheck, ArrowRight, CheckCircle, Users, Award, Globe, Target, Lock, Eye, Brain, AlertTriangle, FileText, TrendingUp, Activity, Clock, MapPin, Star, ChevronLeft, ChevronRight, Play, ExternalLink, Radar, Cpu, Network, Database } from 'lucide-react';
+import { ShieldCheck, CheckCircle, Award, Globe, Target, Lock, Eye, AlertTriangle, FileText, Star, ChevronLeft, ChevronRight, Radar, Network } from 'lucide-react';
+import CyRocLogo from './components/CyRocLogo';
 
 /**
  * GOVERNMENT & DEFENSE PAGE - SERVICE MAPPING ANNOTATIONS

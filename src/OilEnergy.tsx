@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Zap, CheckCircle, FileText, ChevronLeft, ChevronRight, Gauge, Factory } from 'lucide-react';
+import { Zap, CheckCircle, FileText, ChevronLeft, ChevronRight, Gauge, Factory, AlertTriangle, Award, Globe, Network, Star, Target } from 'lucide-react';
 import CyRocLogo from './components/CyRocLogo';
 
 /**
