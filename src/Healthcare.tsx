@@ -124,7 +124,7 @@ function Healthcare() {
 
         {/* Floating Elements */}
         <div className="absolute top-20 right-20 text-tactical-yellow/20 animate-float">
-          <Heart className="h-8 w-8" />
+          <Heart h-8 w-8" />
         </div>
         <div className="absolute bottom-32 left-20 text-military-green/30 animate-float-delayed">
           <Monitor className="h-12 w-12" />

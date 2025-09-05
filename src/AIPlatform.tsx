@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Shield, Brain, ArrowRight, CheckCircle, Users, Award, Globe, Target, Lock, Eye, AlertTriangle, FileText, TrendingUp, Activity, Clock, MapPin, Star, ChevronLeft, ChevronRight, Play, ExternalLink, Cpu, Network, Database, Server, Code, Zap, BarChart3, GitBranch, Layers, Workflow, Bot, LineChart, PieChart, Radar } from 'lucide-react';
+import { Shield, Brain, CheckCircle, Users, Award, Globe, Target, Lock, Eye, AlertTriangle, FileText, TrendingUp, Activity, Clock, MapPin, Star, ChevronLeft, ChevronRight, Play, ExternalLink, Cpu, Network, Database, Server, Code, Zap, BarChart3, GitBranch, Layers, Workflow, Bot, LineChart, PieChart, Radar } from 'lucide-react';
 import ThreatGridAIMap from './components/ThreatGridAIMap';
 import CyRocLogo from './components/CyRocLogo';
 
