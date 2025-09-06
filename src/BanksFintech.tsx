@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Shield, Building2, ArrowRight, CheckCircle, Users, Award, Globe, Target, Lock, Eye, Brain, DollarSign, AlertTriangle, FileText, TrendingUp, Activity, Clock, MapPin, Star, ChevronLeft, ChevronRight, Play, ExternalLink } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Building2, CheckCircle, Users, Award, Globe, Target, Lock, Brain, DollarSign, AlertTriangle, FileText, TrendingUp, Star, ChevronLeft, ChevronRight, Play } from 'lucide-react';
 import CyRocLogo from './components/CyRocLogo';
 
 /**

@@ -1,6 +1,10 @@
 /* Static CSS for hero-space-bg */
 .hero-space-bg {
   background: linear-gradient(to bottom, #0a0f1c, #1a1f2e);
+  background-image: url('/public/home hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
 }

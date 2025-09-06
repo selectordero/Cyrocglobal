@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Shield, Users, Award, Globe, Target, Lock, Eye, Brain, Building2, TrendingUp, Activity, Clock, MapPin, Star, ArrowRight, CheckCircle, Download, ExternalLink, Linkedin, FileText, Mail, Phone, Calendar, DollarSign, Handshake, Network, Briefcase } from 'lucide-react';
+import { useState } from 'react';
+import { Users, Award, Building2, TrendingUp, MapPin, ArrowRight, CheckCircle, Download, ExternalLink, Linkedin, Mail, Phone, Calendar, DollarSign, Handshake, Network } from 'lucide-react';
 import CyRocLogo from './components/CyRocLogo';
 
 function InvestorsPartners() {

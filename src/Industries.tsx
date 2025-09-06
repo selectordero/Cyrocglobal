@@ -1,5 +1,4 @@
-import React from 'react';
-import { Shield, Building2, ShieldCheck, Heart, Zap, ArrowRight, CheckCircle, Users, Award, Globe, Target, Lock, Eye, Brain, Cpu, Network, Database, Server, Code, Briefcase, Scale, UserCheck, Search, ShieldCheck as SecurityShield, Wrench, GraduationCap, AlertTriangle, FileText, TrendingUp, Activity, Clock, MapPin } from 'lucide-react';
+import { Shield, Building2, ShieldCheck, Heart, Zap, ArrowRight, CheckCircle, Users, Globe, Target, Lock, Eye, Brain, Scale, Search, GraduationCap } from 'lucide-react';
 import CyRocLogo from './components/CyRocLogo';
 
 /**
@@ -30,7 +29,7 @@ import CyRocLogo from './components/CyRocLogo';
  * - Healthcare: HIPAA compliance testing, medical device security assessments
  * - Oil & Energy: Critical infrastructure testing, operational technology security
  */
-function Industries({ setCurrentPage }) {
+function Industries({ setCurrentPage }: { setCurrentPage: (id: string) => void }) {
   // Industry data with detailed information
   const industries = [
     {

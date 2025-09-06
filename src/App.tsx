@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Shield, Building2, Heart, Zap, Users, Award, Globe, Target, Lock, Brain, ArrowRight, CheckCircle, DollarSign, MapPin, Mail, Phone, Calendar } from 'lucide-react';
 import CyRocLogo from './components/CyRocLogo';
 import About from './About';

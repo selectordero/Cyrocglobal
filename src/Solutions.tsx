@@ -1,5 +1,4 @@
-import React from 'react';
-import { Shield, Target, Zap, ArrowRight, CheckCircle, Cloud, DollarSign, Radar, Lock, Eye, Users, Award, Building2, Globe, AlertTriangle, FileText, Cpu, Network, Database, Server, Code, Briefcase, Scale, UserCheck, Brain, Search, ShieldCheck, Wrench, GraduationCap, Vibrate as Migrate, Terminal, Clipboard, Swords, Activity, Satellite, Factory, Droplets, Grid3x3, Microscope, Crosshair, UserX, Radio, FileSearch, Gavel, TrendingUp, BarChart3, GitBranch, Layers, Workflow, Bot, LineChart, PieChart, Zap as Lightning } from 'lucide-react';
+import { Shield, ArrowRight, CheckCircle, Cloud, DollarSign, Lock, Users, Award, FileText, Cpu, Brain, Search, Clipboard, Satellite, Factory, Crosshair, UserX } from 'lucide-react';
 import CyRocLogo from './components/CyRocLogo';
 
 /**
