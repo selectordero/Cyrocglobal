@@ -68,7 +68,7 @@ function App() {
 
   // Home page content
   return (
-    <div className="min-h-screen bg-jet-black text-soft-white">
+  <div className="min-h-screen bg-jet-black text-soft-white">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-jet-black/90 backdrop-blur-md border-b border-tactical-yellow/10 rounded-xl md:rounded-2xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -97,22 +97,21 @@ function App() {
 
       {/* Hero Section */}
       <section className="hero-space-bg relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Animated Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-jet-black via-jet-black to-military-green/20"></div>
-        
-        {/* Circuit Pattern Overlay */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 border border-tactical-yellow/30 rounded-full animate-pulse"></div>
-          <div className="absolute top-3/4 right-1/4 w-32 h-32 border border-military-green/40 rounded-full animate-pulse delay-1000"></div>
-          <div className="absolute bottom-1/4 left-1/3 w-48 h-48 border border-tactical-yellow/20 rounded-full animate-pulse delay-500"></div>
-          
-          {/* Grid Pattern */}
+        {/* Reduced overlays for better background visibility */}
+        <div className="absolute inset-0 bg-gradient-to-br from-jet-black via-jet-black to-military-green/10 opacity-40 pointer-events-none"></div>
+        {/* Circuit Pattern Overlay - lower opacity */}
+        <div className="absolute inset-0 opacity-5 pointer-events-none">
+          <div className="absolute top-1/4 left-1/4 w-64 h-64 border border-tactical-yellow/20 rounded-full animate-pulse"></div>
+          <div className="absolute top-3/4 right-1/4 w-32 h-32 border border-military-green/20 rounded-full animate-pulse delay-1000"></div>
+          <div className="absolute bottom-1/4 left-1/3 w-48 h-48 border border-tactical-yellow/10 rounded-full animate-pulse delay-500"></div>
+          {/* Grid Pattern - lower opacity */}
           <div className="absolute inset-0" style={{
             backgroundImage: `
-              linear-gradient(rgba(255, 215, 0, 0.03) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(255, 215, 0, 0.03) 1px, transparent 1px)
+              linear-gradient(rgba(255, 215, 0, 0.01) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(255, 215, 0, 0.01) 1px, transparent 1px)
             `,
-            backgroundSize: '50px 50px'
+            backgroundSize: '50px 50px',
+            opacity: 0.3
           }}></div>
         </div>
 
