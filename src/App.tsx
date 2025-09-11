@@ -68,7 +68,7 @@ function App() {
 
   // Home page content
   return (
-  <div className="min-h-screen bg-jet-black text-soft-white">
+  <div className="min-h-screen text-soft-white">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-jet-black/90 backdrop-blur-md border-b border-tactical-yellow/10 rounded-xl md:rounded-2xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -96,20 +96,7 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="hero-space-bg relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Overlays removed for maximum background image visibility */}
-
-        {/* Floating Elements */}
-        <div className="absolute top-20 right-20 text-tactical-yellow/20 animate-float">
-          <Shield className="h-8 w-8" />
-        </div>
-        <div className="absolute bottom-32 left-20 text-military-green/30 animate-float-delayed">
-          <Lock className="h-12 w-12" />
-        </div>
-        <div className="absolute top-1/3 right-1/3 text-tactical-yellow/15 animate-float-slow">
-          <Brain className="h-6 w-6" />
-        </div>
-
+      <section className="hero-space-bg min-h-screen flex items-center justify-center overflow-hidden">
         {/* Hero Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-8">
